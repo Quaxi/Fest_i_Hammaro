@@ -63,8 +63,8 @@ public class MainActivity extends Activity {
         final AnimationDrawable drawable = new AnimationDrawable();
         final Handler handler = new Handler();
 
-        drawable.addFrame(new ColorDrawable(Color.RED), 400);
-        drawable.addFrame(new ColorDrawable(Color.GREEN), 400);
+        drawable.addFrame(new ColorDrawable(Color.RED), 428);
+        drawable.addFrame(new ColorDrawable(Color.GREEN), 428);
         drawable.setOneShot(false);
 
         layout.setBackgroundDrawable(drawable);
@@ -79,6 +79,7 @@ public class MainActivity extends Activity {
 
     }
 
+    /*
     CountDownTimer timer = new CountDownTimer(5000, 5000) {
 
         @Override
@@ -93,7 +94,7 @@ public class MainActivity extends Activity {
                 mediaPlayer.release();
             }
         }
-    };
+    };*/
 
 
 
