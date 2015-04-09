@@ -6,7 +6,6 @@ import android.graphics.drawable.AnimationDrawable;
 import android.graphics.drawable.ColorDrawable;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.os.CountDownTimer;
 import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -18,12 +17,11 @@ import android.widget.RelativeLayout;
 
 
 public class MainActivity extends Activity {
+    RotateAnimation rA;
+    MediaPlayer mediaPlayer;
     private Button randomButton;
     private MainPresenter presenter;
     private ImageView img;
-    RotateAnimation rA;
-    MediaPlayer mediaPlayer;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,8 +53,13 @@ public class MainActivity extends Activity {
 
         img.startAnimation(rA);
         mediaPlayer.start();
+        ChangeBackground();
        // timer.start();
 
+
+    }
+
+    public void ChangeBackground() {
 
         //Blinka blinka
         final RelativeLayout layout = (RelativeLayout) findViewById(R.id.layout1);
@@ -74,8 +77,6 @@ public class MainActivity extends Activity {
                 drawable.start();
             }
         }, 100);
-
-
 
     }
 
