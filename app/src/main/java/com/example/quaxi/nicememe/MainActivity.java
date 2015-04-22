@@ -18,6 +18,7 @@ import android.widget.RelativeLayout;
 
 public class MainActivity extends Activity {
     RotateAnimation rA;
+    // Mediaspelare
     MediaPlayer mediaPlayer;
     private Button randomButton;
     private MainPresenter presenter;
